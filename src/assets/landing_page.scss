@@ -1,0 +1,488 @@
+    * {
+    font-family: "Noto Serif JP", "Noto Serif TC";
+    }
+
+    html{
+    width: 100%;
+    }
+
+    header {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    margin-bottom: 0px;
+    height: 800px;
+    }
+    
+    section#tools {
+    position: relative;
+    }
+
+    section#steps {
+    position: relative;
+    }
+
+    #myVideo {
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    // min-height: 300px;右側會有兩個Y軸
+    }
+
+    .container#header {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 15%;
+    color: #2f5b28;
+    }
+    .row.top.header_item {
+    animation-name: moving;
+    animation-duration: 3s;
+    }
+    @keyframes moving {
+        0% {
+        transform: translateY(-50px);
+        }
+        100% {
+        transform: translateY(0px);
+        }
+    }
+    .container#header .poet {
+    border-left: solid 1px white;
+    color: white;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+    padding: 8px;
+    letter-spacing: 3px;
+    }
+    .container#header .vrl {
+    writing-mode: vertical-lr;
+    }
+    .container#header .text#img {
+    padding-top: 15px;
+    }
+    .container#header h1 {
+    font-weight: 500;
+    color: white;
+    letter-spacing: 2px;
+    }
+    .container#header h3 {
+    font-size: 16px;
+    color: white;
+    opacity: 0.5;
+    letter-spacing: 3px;
+    }
+    .container#header img {
+    width: 100%;
+    opacity: 0.5;
+    }
+    .container#header .top {
+    height: 150px;
+    }
+    .container#header .bottom {
+    position: absolute;
+    text-align: center;
+    top: 350px;
+    left: 50%;
+    transform: translateX(-50%);
+    }
+    .container#header .bottom h1 {
+    color: white;
+    font-weight: 500;
+    font-size: 28px;
+    letter-spacing: 5px;
+    }
+    h1.title {
+        font-size: 24px;
+    }
+    p.vrl {
+        margin: 0px;
+    }
+    section#tools {
+    background-color: #efeff0;
+    margin-top: 0px;
+    }
+
+    
+    section#tools .powder_box,section#tools .tea,section#tools .cover {
+    min-height: 550px;
+    }
+    section#tools .powder_box:hover img#powder_spoon {
+    transform: scale(1.2) translateX(-50%);
+    }
+    section#tools .powder_box:hover .text {
+    opacity: 0.6;
+    }
+    section#tools .powder_box .img {
+    z-index: 3;
+    }
+    section#tools .powder_box .text {
+    z-index: 5;
+    color: rgba(0,0,0,0.4);
+    opacity: 0;
+    transition: 1s;
+    letter-spacing: 1px;
+    line-height: 25px;
+    position: absolute;
+    top: 15%;
+    }
+    section#tools .powder_box .text .title {
+    border-bottom: solid 1px #b4b4b4;
+    width: 110%;
+    padding-bottom: 5px;
+    z-index: -3;
+    }
+    section#tools .powder_box .text .intro {
+    padding-top: 5px;
+    }
+    section#tools .powder_box img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20%;
+    }
+    section#tools .powder_box img#powder_box {
+    z-index: 3;
+    top: 45%;
+    }
+    section#tools .powder_box img#powder_spoon {
+    z-index: 3;
+    bottom: 20%;
+    transition: 0.5s;
+    }
+    section#tools .powder_box img#shadow {
+    z-index: 1;
+    left: 60%;
+    top: 45%;
+    }
+
+    
+    section#tools .tea:hover img#brush {
+    transform: scale(1.2) translate(-45%, -47%);
+    }
+    section#tools .tea:hover .text_top {
+    opacity: 0.6;
+    }
+    section#tools .tea .text_top {
+    color: rgba(0,0,0,0.4);
+    transition: 1s;
+    letter-spacing: 1px;
+    line-height: 25px;
+    opacity: 0;
+    position: absolute;
+    top: 20%;
+    width: 120%;
+    }
+    section#tools .tea .text_top .title {
+    border-right: solid 1px #b4b4b4;
+    width:30%;
+    padding-right: 10px;
+    text-align: right;
+    height: 180px;
+    position: absolute;
+    }
+    section#tools .tea .text_top .intro {
+    padding-left: 10px;
+    top: -5%;
+    left: 30%;
+    position: absolute;
+
+    }
+   
+    section#tools .tea img#tea {
+    position: absolute;
+    left: 48%;
+    top: 63%;
+    transform: translate(-50%, -50%);
+    }
+    section#tools .tea img#brush {
+    position: absolute;
+    left: 52%;
+    top: 65%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+    }
+    section#tools .tea img#tea_shadow {
+    opacity: 0.7;
+    position: absolute;
+    left: 75%;
+    top: 78%;
+    transform: translate(-50%, -50%);
+    }
+
+
+
+
+   
+    section#tools .cover:hover img#cover {
+    transform: translate(-70%, -50%);
+    }
+    section#tools .cover:hover .text {
+    opacity: 0.6;
+    }
+    section#tools .cover .text {
+    color: rgba(0,0,0,0.4);
+    opacity: 0;
+    transition: 1s;
+    letter-spacing: 1px;
+    line-height: 25px;
+    position: absolute;
+    width: 100%;
+    top: 20%;
+    }
+    section#tools .cover .text .title {
+    border-right: solid 1px #b4b4b4;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    padding-right: 10px;
+    text-align: right;
+    height: 150px;
+    }
+    section#tools .cover .text .intro {
+    padding-left: 1px;
+    position: absolute;
+    left: 53%;
+    }
+    section#tools .cover img#shadow {
+    position: absolute;
+    left: 60%;
+    top: 68%;
+    transform: translate(-50%, -50%);
+    opacity: 0.7;
+    }
+    section#tools .cover img#cover {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    transition: 1s;
+    }
+    section#tools .cover img#powder_box {
+    position: absolute;
+    z-index: 1;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(165deg) scale(1.5);
+    }
+
+    section#steps .line {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-20%);
+    top: 300px;
+    width: 750px;
+    border-bottom: solid 1px #94aa8d;
+    z-index: 3;
+    }
+    section#steps .line01 {
+    top: 190px;
+    }
+    section#steps .line02 {
+    left: 20%;
+    top: 990px;
+    }
+    section#steps .line03 {
+    top: 1780px;
+    width: 500px;
+    left: 43%;
+    }
+    section#steps .line04 {
+    top: 2040px;
+    width: 500px;
+    left: 36%;
+    }
+    section#steps .row {
+    margin-top: 200px;
+    margin-bottom: 150px;
+    z-index: 1;
+    }
+    section#steps .img {
+    padding-left: 0px;
+    }
+    section#steps .img img {
+    width: 100%;
+    padding-left: 0px;
+    }
+    section#steps .col-md-4.cup img {
+    height: 90%;
+    width: 90%;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    margin-bottom: 20px;
+    }
+    section#steps .content {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    justify-content: center;
+    padding: 0px 150px;
+    color: #7d7881;
+    }
+    section#steps .content.content03 {
+    padding: 0px 50px;
+    }
+    section#steps .content h1 {
+    font-size: 36px;
+    letter-spacing: 5px;
+    margin-bottom: 12px;
+    }
+    section#steps .content h4 {
+    font-size: 16px;
+    margin-bottom: 24px;
+    }
+    section#steps .content p {
+    font-size: 16px;
+    letter-spacing: 5px;
+    line-height: 36px;
+    padding-top: 20px;
+    }
+   
+    img#step02.mb-5 {
+        padding-right: 0px;
+    }
+    .col-md-6.img {
+        padding-right: 0px;
+    }
+
+    footer.jumbotron {
+    height: 800px;
+    text-align: center;
+    background-image: url('https://i.imgur.com/TiFd46G.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    }
+    footer.jumbotron .container {
+    color: white;
+    text-align: center;
+    }
+    footer.jumbotron .container .poet {
+    border-left: solid 1px white;
+    color: white;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+    padding: 8px;
+    letter-spacing: 3px;
+    }
+    footer.jumbotron .container img {
+    width: 100%;
+    opacity: 0.7;
+    }
+    footer.jumbotron .container .vrl {
+    writing-mode: vertical-lr;
+    }
+    footer.jumbotron .container h1 {
+    font-size: 28px;
+    letter-spacing: 5px;
+    position: relative;
+    top: 500px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    }
+    footer.jumbotron .container h3 {
+    font-size: 16px;
+    letter-spacing: 5px;
+    position: relative;
+    top: 500px;
+    transform: translateY(-50%);
+    opacity: 0.6;
+    }
+    .orderlast {
+        order: -1;
+    }
+    @media screen and (max-width: 600px) {
+        
+        header#video {
+            height: 580px;
+        }
+        .col-md-4.poets {
+            display: none;
+        }
+        .text-header {
+            position: relative;
+            text-align: center;
+            top: -55%;
+        }
+        .col-md-12.main-header {
+            position: absolute;
+            width: 300px;
+            top: 10%;
+            left: 55%;
+            transform: translate(-50%,-80%);
+        }
+        .col-md-12.col-sm-12.main-header h1 {
+            font-size: 32px;
+            line-height: 40px;
+        }
+        .col-md-4 img#icon {
+            width: 25%;
+            position: relative;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            margin-bottom: 0px;
+        }
+        img#icon {
+            width: 25%;
+            margin-bottom: 30px;
+        }
+        .title p {
+            display: none;
+        }
+
+        section#tools .powder_box, section#tools .tea,section#tools .cover {
+            display: none;
+        }
+
+
+        section#steps .line {
+            display: none;
+        }
+
+
+        footer.jumbotron {
+            height: 650px;
+        }
+        footer.jumbotron img#icon{
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,120%);
+            position: absolute;
+        }
+        footer.jumbotron .text-center {
+            position: absolute;
+            left: 15%;
+            transform: translateY(-120px);
+            cursor: pointer;
+        }
+        
+        footer.jumbotron .container .col-md-4.poets {
+            opacity: 1;
+            top: 50%;
+            left: 50%;
+            transform: translate(0%,0%);
+            position: absolute;
+        }
+        // .container-fluid {
+        //     min-height: 3000px;
+        // }
+        section#steps .content {
+        padding: 0px 50px;
+        align-items: center;
+        }
+        .orderlast {
+        order: 1;
+        }
+       
+
+    }
